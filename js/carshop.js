@@ -345,7 +345,7 @@ const vehicles = [
     {
         brand: 'Barkas',
         name: 'Barkas B1000',
-        logo: 'https://via.placeholder.com/50?text=Barkas',
+        logo: '',
         money: 35000,
         pp: 3000,
         year: 1988,
