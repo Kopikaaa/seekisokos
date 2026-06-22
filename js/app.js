@@ -37,28 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
          cmds: {
             title: "Parancsok",
             subtitle: ""
-        },
-
-        pp: {
-            title: "PP Árak",
-            subtitle: "Prémium Pont információk"
-        },
-
-        property: {
-            title: "Ingatlanok",
-            subtitle: "Házak és bizniszek"
-        },
-
-    
-
-        faq: {
-            title: "GYIK",
-            subtitle: "Gyakori kérdések"
-        },
-
-        links: {
-            title: "Hasznos Linkek",
-            subtitle: "Külső hivatkozások"
         }
     };
 
