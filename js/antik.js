@@ -1,4 +1,3 @@
-// js/antik.js
 
 const antikItems = [
     {
