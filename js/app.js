@@ -44,10 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle: "Házak és bizniszek"
         },
 
-        cmds: {
-            title: "Parancsok",
-            
-        },
+    
 
         faq: {
             title: "GYIK",
