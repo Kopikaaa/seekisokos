@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeMTA V2 Kisokos</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo-box">
+            <div class="logo">SV</div>
+            <div>
+                <h2 >SeeMTA V2</h2>
+                <h5>Kisokos</h5>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+
+            <button class="menu-btn active" data-page="dashboard">
+                Gyorselérés
+            </button>
+
+            <div class="menu-category">
+                <div class="menu-title">
+                    Jármű kisokos
+                </div>
+
+                <div class="submenu">
+                    <button class="menu-btn" data-page="tuning">
+                        Tuning Kalkulátor
+                    </button>
+
+                    <button class="menu-btn" data-page="carshop">
+                        Megvásárolható autók
+                    </button>
+
+                    <button class="menu-btn" data-page="boatshop">
+                        Megvásárolható hajók
+                    </button>
+                </div>
+            </div>
+
+            
+
+            <div class="menu-category">
+                <div class="menu-title">
+                     Egyéb
+                </div>
+
+                <div class="submenu">
+                    <button class="menu-btn" data-page="antik">
+                        Antik kalkulátor
+                    </button>
+
+                    <button class="menu-btn" data-page="pp">
+                        ???
+                    </button>
+
+                    <button class="menu-btn" data-page="property">
+                        ???
+                    </button>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <div class="menu-title">
+                     Segédletek
+                </div>
+
+                <div class="submenu">
+                    <button class="menu-btn" data-page="commands">
+                        Parancsok
+                    </button>
+
+                    <button class="menu-btn" data-page="faq">
+                        ???
+                    </button>
+
+                    <button class="menu-btn" data-page="links">
+                        ???
+                    </button>
+                </div>
+            </div>
+
+        </nav>
+
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <!-- Top Bar -->
+        <header class="topbar">
+
+            <div>
+                <h1 id="page-title">
+                    Gyorselérés
+                </h1>
+
+                <span id="page-subtitle">
+                    SeeMTA V2 információs központ
+                </span>
+            </div>
+
+            <div class="search-box">
+                <input
+                    type="text"
+                    placeholder="Keresés..."
+                    id="searchInput"
+                >
+            </div>
+
+        </header>
+
+        <!-- Dashboard -->
+        <section id="dashboard-page" class="page active">
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-card" data-page-open="tuning">
+                    <div class="card-icon">
+    <i class="fa-solid fa-gears"></i>
+</div>
+
+                    <div class="card-content">
+                        <h3>Tuning Kalkulátor</h3>
+                      
+                    </div>
+                </div>
+
+                <div class="dashboard-card" data-page-open="carshop">
+    <div class="card-icon">
+        <i class="fa-solid fa-car-side"></i>
+    </div>
+
+    <div class="card-content">
+        <h3>Megvásárolható autók</h3>
+    </div>
+</div>
+
+<div class="dashboard-card" data-page-open="boatshop">
+    <div class="card-icon">
+        <i class="fa-solid fa-sailboat"></i>
+    </div>
+
+    <div class="card-content">
+        <h3>Megvásárolható hajók</h3>
+    </div>
+</div>
+
+                <div class="dashboard-card" data-page-open="police">
+                    <div class="card-icon">👮</div>
+
+                    <div class="card-content">
+                        <h3>Frakciók</h3>
+                        <p>Frakció segédletek és tudnivalók.</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card" data-page-open="antik">
+                    <div class="card-icon">💰</div>
+
+                    <div class="card-content">
+                        <h3>Gazdaság</h3>
+                        <p>Fizetések, PP árak és pénzügyek.</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-card" data-page-open="commands">
+                    <div class="card-icon">📋</div>
+
+                    <div class="card-content">
+                        <h3>Parancsok</h3>
+                        <p>Hasznos SeeMTA parancslista.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Tuning -->
+        <section id="tuning-page" class="page">
+
+
+
+            <div id="tuning-container">
+                <!-- tuning.js tölti be -->
+            </div>
+
+        </section>
+
+        <!-- Placeholder oldalak -->
+
+        <section id="carshop-page" class="page">
+       
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="boatshop-page" class="page">
+  
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="antik-page" class="page">
+       
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="pp-page" class="page">
+            <h2>PP árak</h2>
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="property-page" class="page">
+            <h2>Ingatlanok</h2>
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="commands-page" class="page">
+            <h2>Parancsok</h2>
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="faq-page" class="page">
+            <h2>GYIK</h2>
+            <p>Hamarosan...</p>
+        </section>
+
+        <section id="links-page" class="page">
+            <h2>Hasznos linkek</h2>
+            <p>Hamarosan...</p>
+        </section>
+
+    </main>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            SeeMTA V2 Roleplay szerverhez készült kisokos.
+        </div>
+
+        <div class="footer-right">
+            Code:
+            <a
+                href="https://discord.com/users/852876622478442506"
+                target="_blank"
+            >
+                Kopikaaa
+            </a>
+        </div>
+
+    </div>
+</footer>
+
+
+<script src="js/app.js"></script>
+<script src="js/tuning.js"></script>
+<script src="js/carshop.js"></script>
+<script src="js/boatshop.js"></script>
+<script src="js/antik.js"></script>
+
+</body>
+</html>
