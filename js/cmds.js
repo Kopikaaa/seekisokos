@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    const page = document.getElementById("commands-page");
+    const page = document.getElementById("cmds-page");
     if (!page) return;
 
     const categories = [
