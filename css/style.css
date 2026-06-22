@@ -855,102 +855,66 @@ body{
 }
 
 
-.commands-wrapper{
-    display:flex;
-    flex-direction:column;
-    gap:12px;
-}
-
-.commands-card{
-    background:#1a212b;
-    border:1px solid rgba(255,255,255,.05);
-    border-radius:12px;
-    padding:14px;
-}
-
-.commands-card h3{
-    color:var(--accent);
-    font-size:15px;
-    margin-bottom:12px;
-    padding-bottom:8px;
-    border-bottom:
-        1px solid rgba(255,255,255,.05);
-}
-
 .commands-grid{
     display:grid;
-    grid-template-columns:
-        repeat(auto-fill,minmax(180px,1fr));
+    grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
     gap:6px;
 }
 
 .command-item{
-    background:#11161d;
-
-    border:
-        1px solid rgba(255,255,255,.04);
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:8px 12px;
+    background:#161d26;
+    border:1px solid rgba(255,255,255,.04);
     border-radius:8px;
-    padding:8px 10px;
-    color:#d6dee8;
-    font-size:13px;
-    line-height:1.3;
     transition:.15s;
 }
 
 .command-item:hover{
-    border-color:
-        rgba(95,218,139,.20);
-
-    background:#151c25;
+    border-color:rgba(95,218,139,.20);
+    background:#1b232d;
 }
 
-.command-item strong{
-    color:var(--accent);
+.command-name{
+    color:#5fda8b;
+    font-weight:700;
+    min-width:120px;
+    font-family:Consolas,monospace;
+    font-size:13px;
+}
+
+.command-desc{
+    color:#c8d2dd;
+    font-size:13px;
+    flex:1;
 }
 
 .command-search{
     width:100%;
     background:#11161d;
-
-    border:
-        1px solid rgba(255,255,255,.05);
-
+    border:1px solid rgba(255,255,255,.05);
     color:white;
-    padding:10px 12px;
+    padding:12px;
     border-radius:10px;
-    outline:none;
     margin-bottom:12px;
-    font-size:13px;
+    outline:none;
 }
 
 .command-search:focus{
-    border-color:var(--accent);
-    box-shadow:
-        0 0 0 3px rgba(95,218,139,.10);
+    border-color:#5fda8b;
 }
 
 .command-forum-btn{
-    display:inline-flex;
-
-    align-items:center;
-    gap:6px;
-
+    display:inline-block;
+    padding:10px 14px;
     margin-bottom:12px;
-    padding:8px 12px;
-    background:rgba(95,218,139,.10);
-    color:var(--accent);
-
-    border:
-        1px solid rgba(95,218,139,.15);
-
     border-radius:10px;
     text-decoration:none;
+    color:#5fda8b;
+    background:rgba(95,218,139,.10);
+    border:1px solid rgba(95,218,139,.15);
     font-size:13px;
     font-weight:600;
-    transition:.15s;
-}
-
-.command-forum-btn:hover{
-    background:
-        rgba(95,218,139,.16);
 }
