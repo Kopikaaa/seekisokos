@@ -1302,7 +1302,7 @@ const vehicles = [
     {
         brand: 'Utánfutó',
         name: 'Utánfutó',
-        logo: 'https://via.placeholder.com/50?text=Utánfutó',
+        logo: '',
         money: 42500,
         pp: 6000,
         year: 2022,
