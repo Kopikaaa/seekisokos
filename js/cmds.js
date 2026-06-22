@@ -1,230 +1,176 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const page = document.getElementById("cmds-page");
+
     if (!page) return;
 
-    const categories = [
-        {
-            title: "Általános parancsok",
-            commands: [
-                "/me", "/melow", "/do", "/dolow", "/ame", "/b",
-                "/togtips", "/toghud", "/headmove", "/togsnow",
-                "/togspeedo", "/clearooc", "/togaj",
-                "/getskin", "/park", "/placedo",
-                "/protect", "/removeprotect",
-                "/buy", "/id", "/szint",
-                "/lvl", "/description",
-                "/cuccaim", "/bind", "/unbind",
-                "/airride", "/backfire",
-                "/drivetype", "/halalido",
-                "/gate", "/bortonido",
-                "/motozas", "/paytaxi",
-                "/pay", "/pm", "/admins",
-                "/nearbyvehicles",
-                "/getpos", "/fp",
-                "/togdeathmusic"
-            ]
-        },
+    const commands = [
+        ["/me", "Látható cselekvés"],
+        ["/melow", "Látható cselekvés kisebb láthatósággal"],
+        ["/do", "Láthatatlan történés"],
+        ["/dolow", "Láthatatlan történés kisebb láthatósággal"],
+        ["/ame", "Karakter leírása"],
+        ["/b", "OOC chat"],
+        ["/togtips", "Tippek kikapcsolása"],
+        ["/toghud", "HUD kikapcsolása"],
+        ["/headmove", "Fejmozgás kikapcsolása"],
+        ["/togsnow", "Hóesés kikapcsolása"],
+        ["/togspeedo", "KM/H kikapcsolása"],
+        ["/clearooc", "OOC chat törlése"],
+        ["/togaj", "Adminjail infó ki/be"],
+        ["/getskin", "Skin ID megjelenítése"],
+        ["/park", "Jármű leparkolása"],
+        ["/placedo", "Láthatatlan történés lerakása"],
+        ["/protect", "Jármű levédése"],
+        ["/removeprotect", "Jármű levédés feloldása"],
+        ["/r", "Elsődleges rádió"],
+        ["/r2", "Másodlagos rádió"],
+        ["/tuneradio", "Rádió frekvencia beállítása"],
+        ["/tuneradio2", "Másodlagos rádió frekvencia"],
+        ["/kr", "Kamionos rádió"],
+        ["/buy", "Interior vásárlása"],
+        ["/id", "Játékos keresése"],
+        ["/szint", "Játékos szint lekérése"],
+        ["/lvl", "Játékos szint lekérése"],
+        ["/kiszed", "Játékos kiszedése járműből"],
+        ["/cveh", "Ajtó nyitása belülről"],
+        ["/felmond", "Munka felmondása"],
+        ["/description", "Karakter leírás beállítása"],
+        ["/cuccaim", "Kiegészítő panel"],
+        ["/bind", "Parancs bindelése"],
+        ["/unbind", "Bind törlése"],
+        ["/airride", "AirRide állítása"],
+        ["/backfire", "Backfire ki/be"],
+        ["/drivetype", "Meghajtás állítása"],
+        ["/halalido", "Halál idő megjelenítése"],
+        ["/gate", "Kapu kezelése"],
+        ["/bortonido", "Börtön idő lekérése"],
+        ["/motozas", "Játékos motozása"],
+        ["/paytaxi", "Taxi fizetése"],
+        ["/pay", "Pénz átadása"],
+        ["/pm", "Privát üzenet"],
+        ["/admins", "Elérhető adminok"],
+        ["/nearbyvehicles", "Közeli járművek"],
+        ["/getpos", "Pozíció megjelenítése"],
+        ["/fp", "First Person nézet"],
+        ["/togdeathmusic", "Halálzene ki/be"],
 
-        {
-            title: "Gombok",
-            commands: [
-                "F2 - Animpanel",
-                "F3 - Frakciópanel",
-                "F4 - Ablak lehúzás",
-                "F6 - Elakadásjelző",
-                "F7 - PP Shop",
-                "F8 - Konzol",
-                "F10 - Rendszámok",
-                "F11 - Térkép",
-                "F12 - Képernyőkép",
-                "HOME - Dashboard"
-            ]
-        },
+        ["F2", "Animpanel"],
+        ["F3", "Frakciópanel"],
+        ["F4", "Ablak lehúzás"],
+        ["F6", "Elakadásjelző"],
+        ["F7", "PP Shop"],
+        ["F8", "Konzol"],
+        ["F10", "Rendszámok"],
+        ["F11", "Térkép"],
+        ["F12", "Képernyőkép"],
+        ["HOME", "Dashboard"],
 
-        {
-            title: "Rendőrség",
-            commands: [
-                "/m",
-                "/d",
-                "/zsakelvesz",
-                "/takebag",
-                "/jail",
-                "/prison",
-                "/prisoners",
-                "/cuff",
-                "/visz",
-                "/backup",
-                "/settraffi",
-                "/hatar",
-                "/toghatar",
-                "/gclean",
-                "/nearbyspikes",
-                "/rbs",
-                "/nearbyrb",
-                "/mdc",
-                "/togmdcmsg",
-                "/sirenpanel",
-                "/togsirengui",
-                "/setunitstate",
-                "/listcalls",
-                "/delnearbyrb",
-                "/togtraffi"
-            ]
-        },
+        ["/m", "Megaphone"],
+        ["/d", "Sürgősségi rádió"],
+        ["/zsakelvesz", "Zsák lerakása"],
+        ["/takebag", "Zsák lerakása"],
+        ["/jail", "Börtön"],
+        ["/prison", "Fegyház"],
+        ["/prisoners", "Fegyház lista"],
+        ["/cuff", "Bilincselés"],
+        ["/visz", "Bilincsben vezetés"],
+        ["/backup", "Erősítés kérés"],
+        ["/settraffi", "Traffipax lerakás"],
+        ["/hatar", "Határ kezelés"],
+        ["/toghatar", "Határ értesítések"],
+        ["/gclean", "Graffiti eltávolítás"],
+        ["/nearbyspikes", "Közeli szögesdrót"],
+        ["/rbs", "Útzár panel"],
+        ["/nearbyrb", "Közeli útzárak"],
+        ["/mdc", "MDC aktiválása"],
+        ["/togmdcmsg", "MDC értesítések"],
+        ["/sirenpanel", "Sziréna panel"],
+        ["/togsirengui", "Sziréna GUI"],
+        ["/setunitstate", "Egység állapot"],
+        ["/listcalls", "Aktív hívások"],
+        ["/delnearbyrb", "Saját útzár törlése"],
+        ["/togtraffi", "Traffi értesítések"],
 
-        {
-            title: "NNI",
-            commands: [
-                "/lenyomoz",
-                "/lenyomoz ki",
-                "/alnev",
-                "/alnev ki"
-            ]
-        },
+        ["/scaleon", "Kamion mérleg lerakása"],
+        ["/scaleremove", "Kamion mérleg felszedése"],
 
-        {
-            title: "Kamionos",
-            commands: [
-                "/scaleon",
-                "/scaleremove",
-                "/kr"
-            ]
-        },
+        ["/lenyomoz", "Telefonszám lenyomozása"],
+        ["/lenyomoz ki", "Lenyomozás kikapcsolása"],
+        ["/alnev", "Álnév bekapcsolása"],
+        ["/alnev ki", "Álnév kikapcsolása"],
 
-        {
-            title: "BV",
-            commands: [
-                "/prisondoors"
-            ]
-        },
+        ["/prisondoors", "Fegyház ajtók kezelése"],
 
-        {
-            title: "SCCS",
-            commands: [
-                "/fixvehbug",
-                "/acceptmechanic",
-                "/calls_fix",
-                "/calls_sccs",
-                "/delsccs"
-            ]
-        },
+        ["/fixvehbug", "Bugos jármű javítása"],
+        ["/acceptmechanic", "Szerelő hívás elfogadása"],
+        ["/calls_fix", "Szerelő hívások"],
+        ["/calls_sccs", "SCCS hívások"],
+        ["/delsccs", "SCCS hívás törlése"],
 
-        {
-            title: "Taxi",
-            commands: [
-                "/accepttaxi",
-                "/calls_taxi",
-                "/deltaxi"
-            ]
-        },
+        ["/accepttaxi", "Taxi hívás elfogadása"],
+        ["/calls_taxi", "Taxi hívások"],
+        ["/deltaxi", "Taxi hívás törlése"],
 
-        {
-            title: "Katasztrófavédelem",
-            commands: [
-                "/acceptfd",
-                "/togfires"
-            ]
-        },
+        ["/acceptfd", "Tűzoltó hívás elfogadása"],
+        ["/togfires", "Tűz spawnolás"],
 
-        {
-            title: "OMSZ",
-            commands: [
-                "/calls_omsz",
-                "/acceptmedic",
-                "/cancelmedic",
-                "/gyogyit"
-            ]
-        },
+        ["/calls_omsz", "OMSZ hívások"],
+        ["/acceptmedic", "Mentős hívás elfogadása"],
+        ["/cancelmedic", "Mentős hívás törlése"],
+        ["/gyogyit", "Játékos gyógyítása"],
 
-        {
-            title: "NAV",
-            commands: [
-                "/lefoglal"
-            ]
-        },
+        ["/lefoglal", "Jármű lefoglalása"],
 
-        {
-            title: "Bandák",
-            commands: [
-                "/graffiti"
-            ]
-        }
+        ["/graffiti", "Graffiti felfestése"]
     ];
 
     page.innerHTML = `
-      
-
-        <div style="margin-bottom:20px;">
-            <a
-                href="https://forum.seev2.hu/threads/szerveren-megtalalhato-parancsok.165/"
-                target="_blank"
-                class="btn"
-            >
-                Fórum leírás megnyitása
-            </a>
-        </div>
+        <a
+            href="https://forum.seev2.hu/threads/szerveren-megtalalhato-parancsok.165/"
+            target="_blank"
+            class="command-forum-btn"
+        >
+            Fórum leírás megnyitása
+        </a>
 
         <input
             type="text"
             id="commandSearch"
-            class="vehicle-search"
+            class="command-search"
             placeholder="Parancs keresése..."
-            style="margin-bottom:20px;"
         >
 
-        <div id="commandsContainer"></div>
+        <div class="commands-grid" id="commandsGrid"></div>
     `;
 
-    const container = document.getElementById("commandsContainer");
+    const grid = document.getElementById("commandsGrid");
 
-    function render(filter = "") {
+    function render(search = "") {
 
-        container.innerHTML = "";
+        grid.innerHTML = "";
 
-        categories.forEach(category => {
+        commands
+            .filter(cmd =>
+                cmd[0].toLowerCase().includes(search.toLowerCase()) ||
+                cmd[1].toLowerCase().includes(search.toLowerCase())
+            )
+            .forEach(cmd => {
 
-            const commands = category.commands.filter(cmd =>
-                cmd.toLowerCase().includes(filter.toLowerCase())
-            );
+                grid.innerHTML += `
+                    <div class="command-item">
 
-            if (!commands.length) return;
-
-            const card = document.createElement("div");
-
-            card.className = "info-card";
-            card.style.marginBottom = "20px";
-
-            card.innerHTML = `
-                <h3 style="
-                    color:var(--accent);
-                    margin-bottom:15px;
-                ">
-                    ${category.title}
-                </h3>
-
-                <div style="
-                    display:grid;
-                    grid-template-columns:
-                    repeat(auto-fill,minmax(220px,1fr));
-                    gap:10px;
-                ">
-                    ${commands.map(cmd => `
-                        <div style="
-                            background:#11161d;
-                            padding:12px;
-                            border-radius:10px;
-                            border:1px solid rgba(255,255,255,.05);
-                        ">
-                            ${cmd}
+                        <div class="command-name">
+                            ${cmd[0]}
                         </div>
-                    `).join("")}
-                </div>
-            `;
 
-            container.appendChild(card);
-        });
-    }
+                        <div class="command-desc">
+                            ${cmd[1]}
+                        </div>
+
+                    </div>
+                `;
+            }); }
 
     render();
 
@@ -233,5 +179,4 @@ document.addEventListener("DOMContentLoaded", () => {
         .addEventListener("input", e => {
             render(e.target.value);
         });
-
 });
