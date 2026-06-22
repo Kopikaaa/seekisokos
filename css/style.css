@@ -37,7 +37,7 @@ body{
     overflow:hidden;
 }
 
-/* Layout */
+
 
 .app{
     display:flex;
@@ -45,7 +45,7 @@ body{
     height:calc(100vh - 50px);
 }
 
-/* Sidebar */
+
 
 .sidebar{
     width:280px;
@@ -161,7 +161,7 @@ body{
     color:var(--accent);
 }
 
-/* Main */
+
 
 .content{
     flex:1;
@@ -170,7 +170,6 @@ body{
     overflow:hidden;
 }
 
-/* Topbar */
 
 .topbar{
     height:90px;
@@ -223,7 +222,7 @@ body{
         0 0 0 4px rgba(95,218,139,.12);
 }
 
-/* Pages */
+
 
 .page{
     display:none;
@@ -236,7 +235,7 @@ body{
     display:block;
 }
 
-/* Dashboard */
+
 
 .dashboard-grid{
     display:grid;
@@ -302,7 +301,7 @@ body{
     font-size:14px;
 }
 
-/* Generic */
+
 
 .info-card{
     background:linear-gradient(
@@ -321,7 +320,7 @@ body{
         0 10px 30px rgba(0,0,0,.15);
 }
 
-/* Tabs */
+
 
 .tab-btn{
     border:none;
@@ -332,7 +331,7 @@ body{
     color:#111;
 }
 
-/* Tuning */
+
 
 .tuning-select{
     min-width:300px;
@@ -440,7 +439,7 @@ body{
     color:#4ea3ff;
 }
 
-/* Buttons */
+
 
 .btn{
     border:none;
@@ -465,7 +464,6 @@ body{
     transform:translateY(-2px);
 }
 
-/* Scrollbar */
 
 ::-webkit-scrollbar{
     width:10px;
@@ -484,7 +482,6 @@ body{
     background:#3b4858;
 }
 
-/* Mobile */
 
 @media(max-width:1000px){
 
@@ -540,9 +537,6 @@ body{
 }
 
 
-/* =========================
-   CARSHOP
-========================= */
 
 .vehicle-wrapper{
     background:linear-gradient(
@@ -686,14 +680,6 @@ body{
 }
 
 
-
-
-
-
-/* =========================
-   FOOTER
-========================= */
-
 .footer{
     height:50px;
 
@@ -732,11 +718,6 @@ body{
 }
 
 
-
-
-/* =========================
-   ANTIK KALKULÁTOR
-========================= */
 
 .antik-grid{
     display:grid;
