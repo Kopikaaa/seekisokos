@@ -752,7 +752,7 @@ const vehicles = [
     {
         brand: 'Lakóautó',
         name: 'Lakóautó',
-        logo: 'https://via.placeholder.com/50?text=Lakóautó',
+        logo: '',
         money: 650000,
         pp: 15000,
         year: 2020,
@@ -763,7 +763,7 @@ const vehicles = [
     {
         brand: 'Lakókocsi',
         name: 'Lakókocsi',
-        logo: 'https://via.placeholder.com/50?text=Lakókocsi',
+        logo: '',
         money: 550000,
         pp: 17000,
         year: 1997,
@@ -950,7 +950,7 @@ const vehicles = [
     {
         brand: 'Mercedes-AMG',
         name: 'Mercedes-AMG Project One',
-        logo: 'https://via.placeholder.com/50?text=Mercedes-AMG',
+        logo: 'img/brands/Mercedes-Benz.png',
         money: 800000,
         pp: 36500,
         year: 2022,
