@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle: "Add meg a darabszámot."
         },
 
+         cmds: {
+            title: "Parancsok",
+            subtitle: ""
+        },
+
         pp: {
             title: "PP Árak",
             subtitle: "Prémium Pont információk"
