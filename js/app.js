@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle: "Házak és bizniszek"
         },
 
-        commands: {
+        cmds: {
             title: "Parancsok",
             
         },
