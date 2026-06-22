@@ -153,9 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     page.innerHTML = `
-        <div class="module-header">
-            <h2>Parancsok</h2>
-        </div>
+      
 
         <div style="margin-bottom:20px;">
             <a
