@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         commands: {
             title: "Parancsok",
-            subtitle: "Hasznos SeeMTA parancsok"
+            
         },
 
         faq: {
