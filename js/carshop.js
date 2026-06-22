@@ -1,4 +1,4 @@
-// js/carshop.js
+
 
 const vehicles = [
     {
