@@ -84,52 +84,52 @@ const antikItems = [
 {
     name: '<span style="color:#ff8c00">[Új]</span> Réz gyertyatartó',
     image: "img/antik/589.png",
-    price: 18450
+    price: 13950
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Antik monokli',
     image: "img/antik/582.png",
-    price: 22100
+    price: 17850
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Kovácsolt sarkantyú',
     image: "img/antik/588.png",
-    price: 16800
+    price: 12380
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Bronz szobrocska',
     image: "img/antik/585.png",
-    price: 39600
+    price: 31240
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Hajóskapitányi szextáns',
     image: "img/antik/587.png",
-    price: 58750
+    price: 64820
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Antik sárgaréz iránytű',
     image: "img/antik/583.png",
-    price: 32400
+    price: 34850
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Antik díszes zsebkés',
     image: "img/antik/581.png",
-    price: 24750
+    price: 26340
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Viktoriánus pecsétnyomó',
     image: "img/antik/590.png",
-    price: 27900
+    price: 24950
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Aranyozott tubákos szelence',
     image: "img/antik/584.png",
-    price: 47250
+    price: 54650
 },
 {
     name: '<span style="color:#ff8c00">[Új]</span> Ezüst tubákos szelence',
     image: "img/antik/586.png",
-    price: 28400
+    price: 28150
 }
 
 ];
