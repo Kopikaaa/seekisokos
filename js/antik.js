@@ -72,7 +72,7 @@ const antikItems = [
     },
     {
         name: "Arany nyaklánc",
-        image: "img/antik/517.png",
+        image: "img/antik/529.png",
         price: 14796
     },
     {
