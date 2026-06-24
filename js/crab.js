@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     page.innerHTML = `
         <div class="module-header">
-            <h2>Rákászat Kalkulátor</h2>
+       
         </div>
 
         <div class="info-card" style="max-width:600px;">
