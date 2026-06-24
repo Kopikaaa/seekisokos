@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="tuning-summary">
 
                 <div class="summary-header">
-                    <h3>Várható bevétel</h3>
+                    <h3>Bevétel</h3>
                 </div>
 
                 <div class="summary-box money">
