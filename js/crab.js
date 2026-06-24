@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     type="number"
                     id="crabPrice"
                     class="command-search"
-                    placeholder="Pl.: 450"
+                    placeholder="Pl.: 90$/kg"
                     min="0"
                 >
             </div>
