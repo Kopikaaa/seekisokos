@@ -34,6 +34,11 @@ document.addEventListener("DOMContentLoaded", () => {
             subtitle: "Add meg a darabszámot."
         },
 
+        crab: {
+            title: "Rákászat kalkulátor",
+            subtitle: ""
+        },
+
          cmds: {
             title: "Parancsok",
             subtitle: ""
