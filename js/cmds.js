@@ -8,11 +8,6 @@ document.addEventListener("DOMContentLoaded", () => {
         {
             title: "Általános parancsok",
             commands: [
-                ["/me", "Látható cselekvés ( előveszi a csekk könyvet )."],
-                ["/melow", "Látható cselekvés ( kisebb láthatósága van )."],
-                ["/do", "Láthatatlan történés ( eltörik a lábában egy csont )."],
-                ["/dolow", "Láthatatlan történés ( kisebb láthatósága van )."],
-                ["/ame", "Karakter leírása ( 180 cm magas , 80 kg )."],
                 ["/b", "OOC chat előhozás ( b betűvel is működik )."],
                 ["/togtips", "Tippek kikapcsolása."],
                 ["/toghud", "Teljes hud kikapcsolása."],
@@ -24,7 +19,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 ["/togaj", "Adminjail infó ki-bekapcsolása."],
                 ["/getskin", "Jelenlegi kinézetedet (skin ID-t.) adja meg."],
                 ["/park", "Jármű leparkolása egy adott helyre."],
-                ["/placedo", "Animációval nem megjeleníthető ( vér található a földön)."],
                 ["/protect", "Jármű levédése."],
                 ["/removeprotect", "Jármű levédésének levétele"],
                 ["/r", "Elsőfokú rádióba való beszélés."],
@@ -59,6 +53,19 @@ document.addEventListener("DOMContentLoaded", () => {
                 ["/togdeathmusic", "Halálzene kikapcsolása."]
             ]
         },
+
+ {
+            title: "RP parancsok",
+            commands: [
+                ["/me", "Látható cselekvés ( előveszi a csekk könyvet )."],
+                ["/melow", "Látható cselekvés ( kisebb láthatósága van )."],
+                ["/do", "Láthatatlan történés ( eltörik a lábában egy csont )."],
+                ["/dolow", "Láthatatlan történés ( kisebb láthatósága van )."],
+                ["/ame", "Karakter leírása ( 180 cm magas , 80 kg )."],
+                ["/placedo", "Animációval nem megjeleníthető ( vér található a földön)."]
+            ]
+        },
+        
         {
             title: "Gyorsgombok",
             commands: [
