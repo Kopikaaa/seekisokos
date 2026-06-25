@@ -66,19 +66,14 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        if (pageInfo[pageName]) {
+       if (pageInfo[pageName]) {
+    pageTitle.textContent = pageInfo[pageName].title;
 
-            pageTitle.textContent =
-                pageInfo[pageName].title;
-
-            pageSubtitle.textContent =
-                pageInfo[pageName].subtitle;
-        }
-
-        localStorage.setItem(
-            "seemta-last-page",
-            pageName
-        );
+    if (pageSubtitle) {
+        pageSubtitle.textContent = pageInfo[pageName].subtitle;
+    }
+}
+       
     }
 
     menuButtons.forEach(button => {
@@ -105,21 +100,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-    const lastPage =
-        localStorage.getItem(
-            "seemta-last-page"
-        );
 
-    if (
-        lastPage &&
-        document.getElementById(
-            `${lastPage}-page`
-        )
-    ) {
-        openPage(lastPage);
-    } else {
         openPage("dashboard");
-    }
+    
 
     const searchInput =
         document.getElementById(
@@ -155,7 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     console.log(
-        "✅ SeeMTA V2 Kisokos betöltve"
+        "Használjátok egészséggel. :)"
     );
 
 });
