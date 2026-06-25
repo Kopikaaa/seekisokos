@@ -49,10 +49,11 @@ body{
 .logo-img{
     width:56px;
     height:56px;
-    border-radius:14px;
-    object-fit:cover;
+    object-fit:contain;
     flex-shrink:0;
-    box-shadow:0 0 25px rgba(95,218,139,.25);
+    border-radius:0;
+    background:none;
+    box-shadow:none;
 }
 
 
