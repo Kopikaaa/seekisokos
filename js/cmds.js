@@ -65,6 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ["F2 ", "Animpanel előhozása."],
                 ["F3 ", "Frakciópanel"],
                 ["F4 ", "Jármű ablak lehúzása."],
+                ["F5 ", "Öv"],
                 ["F6 ", "Elakadás jelző."],
                 ["F7 ", "PP Shop."],
                 ["F8 ", "Konzol."],
