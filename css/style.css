@@ -865,20 +865,57 @@ body{
 }
 
 
+.commands-list{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.command-section{
+    padding-top:22px;
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+.command-section:first-child{
+    padding-top:0;
+    border-top:none;
+}
+
+.command-section-header{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+
+.command-section-title{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    min-width:0;
+}
+
+.command-section-title h3{
+    font-size:16px;
+    font-weight:700;
+    color:#ffffff;
+}
+
 .commands-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(420px,1fr));
-    gap:6px;
+    grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));
+    gap:8px;
 }
 
 .command-item{
-    display:flex;
+    display:grid;
+    grid-template-columns:minmax(120px,auto) 1fr;
     align-items:center;
     gap:12px;
-    padding:8px 12px;
+    min-height:44px;
+    padding:5px 8px;
     background:#161d26;
     border:1px solid rgba(255,255,255,.04);
-    border-radius:8px;
+    border-radius:13px;
     transition:.15s;
 }
 
@@ -890,15 +927,24 @@ body{
 .command-name{
     color:#5fda8b;
     font-weight:700;
-    min-width:120px;
     font-family:Consolas,monospace;
     font-size:13px;
+    white-space:nowrap;
 }
 
 .command-desc{
     color:#c8d2dd;
     font-size:13px;
-    flex:1;
+    line-height:1.4;
+}
+
+.command-empty{
+    padding:18px;
+    background:#161d26;
+    border:1px solid rgba(255,255,255,.05);
+    border-radius:10px;
+    color:#98a6b7;
+    font-size:14px;
 }
 
 .command-search{
@@ -908,7 +954,7 @@ body{
     color:white;
     padding:12px;
     border-radius:10px;
-    margin-bottom:12px;
+    margin-bottom:18px;
     outline:none;
 }
 
@@ -927,4 +973,27 @@ body{
     border:1px solid rgba(95,218,139,.15);
     font-size:13px;
     font-weight:600;
+}
+
+.command-forum-btn:hover{
+    background:rgba(95,218,139,.16);
+}
+
+@media(max-width:600px){
+
+    .command-section-header{
+        align-items:flex-start;
+        flex-direction:column;
+        gap:8px;
+    }
+
+    .command-item{
+        grid-template-columns:1fr;
+        align-items:flex-start;
+        gap:4px;
+    }
+
+    .command-name{
+        white-space:normal;
+    }
 }
