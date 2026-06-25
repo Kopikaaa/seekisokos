@@ -104,41 +104,25 @@ document.addEventListener("DOMContentLoaded", () => {
         openPage("dashboard");
     
 
-    const searchInput =
-        document.getElementById(
-            "searchInput"
-        );
+    const searchInput = document.getElementById("searchInput");
 
-    searchInput.addEventListener(
-        "input",
-        function () {
+if (searchInput) {
+    searchInput.addEventListener("input", function () {
 
-            const search =
-                this.value.toLowerCase();
+        const search = this.value.toLowerCase();
 
-            menuButtons.forEach(btn => {
+        menuButtons.forEach(btn => {
 
-                const text =
-                    btn.textContent
-                    .toLowerCase();
+            const text = btn.textContent.toLowerCase();
 
-                if (
-                    text.includes(search)
-                ) {
-                    btn.style.display =
-                        "block";
-                } else {
-                    btn.style.display =
-                        "none";
-                }
+            btn.style.display = text.includes(search)
+                ? "block"
+                : "none";
+        });
 
-            });
+    });
+}
 
-        }
-    );
-
-    console.log(
-        "Használjátok egészséggel. :)"
-    );
+console.log("Használjátok egészséggel. :)");
 
 });
