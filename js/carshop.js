@@ -79,11 +79,11 @@ const vehicles = [
         weight: 1800
     },
     {
-        brand: 'Audi',
-        name: 'Audi RS5',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/9/92/Audi-Logo_2016.svg',
+        brand: 'Hotknife',
+        name: 'Hotknife',
+        logo: '',
         money: 450000,
-        pp: 18000,
+        pp: 32000,
         year: 2017,
         fuel: 'Benzin',
         hp: 450,
@@ -827,13 +827,13 @@ const vehicles = [
         weight: 2100
     },
     {
-        brand: 'Mazda',
-        name: 'Mazda RX-8',
-        logo: 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Mazda_logo.svg',
+        brand: 'Yangwang',
+        name: 'BYD Yangwang U9',
+        logo: '',
         money: 350000,
-        pp: 16000,
-        year: 2002,
-        fuel: 'Benzin',
+        pp: 32000,
+        year: 2022,
+        fuel: 'Elektromos',
         hp: 276,
         weight: 1300
     },
