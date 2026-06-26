@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ["/headmove", "Fejmozgás kikapcsolás."],
                 ["/togsnow", "Hó esés kikapcsolása."],
                 ["/togspeedo", "KM/H kikapcsolás."],
-                ["/clearooc", "OOC chat törlése."],
+                ["/clearooc | /co", "OOC chat törlése."],
                 ["/clearchat", "IC chat törlése."],
                 ["/togaj", "Adminjail infó ki-bekapcsolása."],
                 ["/getskin", "Jelenlegi kinézetedet (skin ID-t.) adja meg."],
